@@ -503,6 +503,10 @@ int lzohtable_put_x(
         }
     }
 
+    if(out_hash){
+        *out_hash = hash;
+    }
+
     goto OK;
 
 ERROR:
